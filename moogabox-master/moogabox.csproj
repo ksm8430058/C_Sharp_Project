@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DAAFF37-39C3-46C4-9B99-C4D95AB49DE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>moogabox</RootNamespace>
+    <AssemblyName>moogabox</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="로그인.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="로그인.designer.cs">
+      <DependentUpon>로그인.cs</DependentUpon>
+    </Compile>
+    <Compile Include="메뉴선택.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="메뉴선택.designer.cs">
+      <DependentUpon>메뉴선택.cs</DependentUpon>
+    </Compile>
+    <Compile Include="회원가입.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="회원가입.designer.cs">
+      <DependentUpon>회원가입.cs</DependentUpon>
+    </Compile>
+    <Compile Include="예매조회결과%28전화번호%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="예매조회결과%28전화번호%29.Designer.cs">
+      <DependentUpon>예매조회결과%28전화번호%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="예매조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="예매조회.Designer.cs">
+      <DependentUpon>예매조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="예매조회결과%28예매번호%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="예매조회결과%28예매번호%29.designer.cs">
+      <DependentUpon>예매조회결과%28예매번호%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="영화및시간선택.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="영화및시간선택.Designer.cs">
+      <DependentUpon>영화및시간선택.cs</DependentUpon>
+    </Compile>
+    <Compile Include="영화좌석선택.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="영화좌석선택.Designer.cs">
+      <DependentUpon>영화좌석선택.cs</DependentUpon>
+    </Compile>
+    <Compile Include="예매선택확인.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="예매선택확인.Designer.cs">
+      <DependentUpon>예매선택확인.cs</DependentUpon>
+    </Compile>
+    <Compile Include="결제정보창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="결제정보창.Designer.cs">
+      <DependentUpon>결제정보창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="예매완료알림창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="예매완료알림창.Designer.cs">
+      <DependentUpon>예매완료알림창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="매점구매창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="매점구매창.Designer.cs">
+      <DependentUpon>매점구매창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_첫화면.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_첫화면.Designer.cs">
+      <DependentUpon>관리자_첫화면.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_총매출창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_총매출창.Designer.cs">
+      <DependentUpon>관리자_총매출창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_재고메뉴선택창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_재고메뉴선택창.Designer.cs">
+      <DependentUpon>관리자_재고메뉴선택창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_재고관리창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_재고관리창.Designer.cs">
+      <DependentUpon>관리자_재고관리창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_발주관리창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_발주관리창.Designer.cs">
+      <DependentUpon>관리자_발주관리창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_팝콘생산애니매이션.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_팝콘생산애니매이션.Designer.cs">
+      <DependentUpon>관리자_팝콘생산애니매이션.cs</DependentUpon>
+    </Compile>
+    <Compile Include="관리자_콜라생산애니매이션.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="관리자_콜라생산애니매이션.Designer.cs">
+      <DependentUpon>관리자_콜라생산애니매이션.cs</DependentUpon>
+    </Compile>
+    <Compile Include="영화매출그래프.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="영화매출그래프.Designer.cs">
+      <DependentUpon>영화매출그래프.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="매점매출그래프.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="매점매출그래프.Designer.cs">
+      <DependentUpon>매점매출그래프.cs</DependentUpon>
+    </Compile>
+    <Compile Include="매점 각 메뉴가격.cs" />
+    <Compile Include="UserControls\UC_Drink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Drink.Designer.cs">
+      <DependentUpon>UC_Drink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Popcorn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Popcorn.Designer.cs">
+      <DependentUpon>UC_Popcorn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Set.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Set.Designer.cs">
+      <DependentUpon>UC_Set.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="로그인.resx">
+      <DependentUpon>로그인.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="메뉴선택.resx">
+      <DependentUpon>메뉴선택.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="회원가입.resx">
+      <DependentUpon>회원가입.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="예매조회결과%28전화번호%29.resx">
+      <DependentUpon>예매조회결과%28전화번호%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="예매조회.resx">
+      <DependentUpon>예매조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="예매조회결과%28예매번호%29.resx">
+      <DependentUpon>예매조회결과%28예매번호%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="영화및시간선택.resx">
+      <DependentUpon>영화및시간선택.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="영화좌석선택.resx">
+      <DependentUpon>영화좌석선택.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="예매선택확인.resx">
+      <DependentUpon>예매선택확인.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="결제정보창.resx">
+      <DependentUpon>결제정보창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="예매완료알림창.resx">
+      <DependentUpon>예매완료알림창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="매점구매창.resx">
+      <DependentUpon>매점구매창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_첫화면.resx">
+      <DependentUpon>관리자_첫화면.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_총매출창.resx">
+      <DependentUpon>관리자_총매출창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_재고메뉴선택창.resx">
+      <DependentUpon>관리자_재고메뉴선택창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_재고관리창.resx">
+      <DependentUpon>관리자_재고관리창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_발주관리창.resx">
+      <DependentUpon>관리자_발주관리창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_팝콘생산애니매이션.resx">
+      <DependentUpon>관리자_팝콘생산애니매이션.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="관리자_콜라생산애니매이션.resx">
+      <DependentUpon>관리자_콜라생산애니매이션.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="영화매출그래프.resx">
+      <DependentUpon>영화매출그래프.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="매점매출그래프.resx">
+      <DependentUpon>매점매출그래프.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Drink.resx">
+      <DependentUpon>UC_Drink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Popcorn.resx">
+      <DependentUpon>UC_Popcorn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Set.resx">
+      <DependentUpon>UC_Set.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\moogabox.exe.config" />
+    <None Include="bin\Debug\moogabox.exe.locked" />
+    <None Include="packages.config" />
+    <None Include="packages\FontAwesome.Sharp.5.15.4\.signature.p7s" />
+    <None Include="packages\FontAwesome.Sharp.5.15.4\FontAwesome.Sharp.5.15.4.nupkg" />
+    <None Include="packages\Guna.UI2.WinForms.2.0.3.2\.signature.p7s" />
+    <None Include="packages\Guna.UI2.WinForms.2.0.3.2\Guna.UI2.WinForms.2.0.3.2.nupkg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\moogabox.exe" />
+    <Content Include="bin\Debug\moogabox.pdb" />
+    <Content Include="Image\KakaoTalk_20220525_141938370.png" />
+    <Content Include="Image\KakaoTalk_20220526_152108642.png" />
+    <Content Include="Image\무가박스 고소 - 수정본.png" />
+    <Content Include="Image\무가박스 기본스몰콤보 -수정.png" />
+    <Content Include="Image\무가박스 달콤스몰  -수정본.png" />
+    <Content Include="Image\무가박스 더블치즈 -수정.png" />
+    <Content Include="Image\무가박스 스몰 기본팝콘.png" />
+    <Content Include="Image\무가박스 스몰기본 -수정본.png" />
+    <Content Include="Image\무가박스 스몰더블 -수정본.png" />
+    <Content Include="Image\무가박스 콜라 -수정본.png" />
+    <Content Include="Image\무가박스 콤보 1 -수정.png" />
+    <Content Include="Image\무가박스 콤보 2 - 수정본.png" />
+    <Content Include="Image\무가박스 팝콘 -수정.png" />
+    <Content Include="Image\스몰 어니언팝콘 - 수정.png" />
+    <Content Include="Image\스몰치즈팝콘 - 수정.png" />
+    <Content Include="Image\팝콘 더블어니언 -수정.png" />
+    <Content Include="packages\FontAwesome.Sharp.5.15.4\lib\net40\FontAwesome.Sharp.dll" />
+    <Content Include="packages\FontAwesome.Sharp.5.15.4\lib\net45\FontAwesome.Sharp.dll" />
+    <Content Include="packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll" />
+    <Content Include="packages\FontAwesome.Sharp.5.15.4\lib\net48\FontAwesome.Sharp.dll" />
+    <Content Include="packages\FontAwesome.Sharp.5.15.4\lib\net5.0-windows7.0\FontAwesome.Sharp.dll" />
+    <Content Include="packages\FontAwesome.Sharp.5.15.4\lib\netcoreapp3.1\FontAwesome.Sharp.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.3.2\icon.png" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.3.2\LICENSE.txt" />
+    <Content Include="Resources.resx.txt" />
+    <None Include="Resources\범죄도시2.png" />
+    <None Include="Resources\MvName.png" />
+    <None Include="Resources\KakaoTalk_20220526_152108642.png" />
+    <Content Include="Resources\MoogaBox_Icon.ico" />
+    <Content Include="Resources\premium-icon-film-726322.ico" />
+    <None Include="Resources\moogabox.png" />
+    <None Include="Resources\pc배경화면_벚꽃.png" />
+    <Content Include="Resources\닥터.png" />
+    <None Include="Resources\닥터new.png" />
+    <None Include="Resources\닥터 스트레인.png" />
+    <None Include="Resources\닥터 스트레인지.png" />
+    <Content Include="Resources\쥬라기월드.png" />
+    <None Include="Resources\쥬라기월드new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
